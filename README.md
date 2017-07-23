@@ -1,4 +1,4 @@
-## Keyboard sound
+## keyboard sound
 
 When you press the keyboard will play sound.
 
