@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    w.move((QDesktopWidget::width() - w.width()) / 2,
-           (QDesktopWidget::height() - w.height()) / 2);
+    w.move((QApplication::desktop()->width() - w.width()) / 2,
+           (QApplication::desktop()->height() - w.height()) / 2);
 
     return a.exec();
 }
