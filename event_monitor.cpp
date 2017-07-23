@@ -86,35 +86,35 @@ void EventMonitor::handleRecordEvent(XRecordInterceptData* data)
             if (filterWheelEvent(event->u.u.detail)) {
                 isPress = true;
                 emit buttonPress(
-                    event->u.keyButtonPointer.rootX, 
+                    event->u.keyButtonPointer.rootX,
                     event->u.keyButtonPointer.rootY);
             }
-            
+
             break;
         case MotionNotify:
             if (isPress) {
                 emit buttonDrag(
-                    event->u.keyButtonPointer.rootX, 
+                    event->u.keyButtonPointer.rootX,
                     event->u.keyButtonPointer.rootY);
             }
-            
+
             break;
         case ButtonRelease:
             if (filterWheelEvent(event->u.u.detail)) {
                 isPress = false;
                 emit buttonRelease(
-                    event->u.keyButtonPointer.rootX, 
+                    event->u.keyButtonPointer.rootX,
                     event->u.keyButtonPointer.rootY);
             }
-            
+
             break;
         case KeyPress:
             emit keyPress(((unsigned char*) data->data)[1]);
-            
+
             break;
         case KeyRelease:
             emit keyRelease(((unsigned char*) data->data)[1]);
-            
+
             break;
         default:
             break;

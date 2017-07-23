@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui x11extras
+QT       += core gui x11extras multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,9 +17,15 @@ PKGCONFIG += xcb xcb-util
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        event_monitor.cpp \
+    main_window.cpp
 
 HEADERS += \
-        mainwindow.h
+        event_monitor.h \
+    main_window.h
+
+RESOURCES += sound.qrc
 
 LIBS += -lX11 -lXext -lXtst
+
+QMAKE_CXXFLAGS += -g

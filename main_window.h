@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVBoxLayout>
 
 class MainWindow : public QMainWindow
 {
@@ -10,6 +11,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private:
+    QWidget *mainWidget;
+    QVBoxLayout *layout;
+
+public slots:
+    void keyBoardPress();
 };
 
 #endif // MAINWINDOW_H
