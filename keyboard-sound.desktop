@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Application;Utility;
+Encoding=UTF-8
+Exec=/usr/bin/keyboard-sound
+Icon=muse
+Name=KeyBoard Sound
+Name[zh_CN]=键盘音效
+Name[zh_TW]=键盘音效
+StartupNotify=false
+Terminal=false
+Type=Application
+X-MultipleArgs=false

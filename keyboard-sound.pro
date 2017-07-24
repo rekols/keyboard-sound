@@ -29,3 +29,12 @@ RESOURCES += sound.qrc
 LIBS += -lX11 -lXext -lXtst
 
 QMAKE_CXXFLAGS += -g
+
+isEmpty(BINDIR):BINDIR=/usr/bin
+isEmpty(APPDIR):APPDIR=/usr/share/applications
+
+target.path = $$INSTROOT$$BINDIR
+desktop.path = $$INSTROOT$$APPDIR
+desktop.files = rekols-dict.desktop
+
+INSTALLS += target desktop
