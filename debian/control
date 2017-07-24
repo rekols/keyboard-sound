@@ -1,0 +1,12 @@
+Source: keyboard-sound
+Section: base
+Priority: optional
+Maintainer: rekols <rekols@foxmail.com>
+Build-Depends: debhelper (>= 9), pkg-config, qt5-default, dpkg-dev, qt5-qmake, qtbase5-dev libqt5x11extras5-dev libxcb-util0-dev libxtst-dev
+Standards-Version: 0.1
+Homepage: https://github.com/rekols
+
+Package: keyboard-sound
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: When you press the keyboard will play sound.
