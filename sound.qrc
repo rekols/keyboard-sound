@@ -7,12 +7,13 @@
         <file>sound/bubble/5.wav</file>
         <file>sound/bubble/6.wav</file>
         <file>sound/bubble/7.wav</file>
-        <file>sound/bubble/8.wav</file>
+        <file>sound/bubble/0.wav</file>
         <file>sound/bubble/enter.wav</file>
         <file>sound/mechanical/1.wav</file>
         <file>sound/mechanical/2.wav</file>
         <file>sound/mechanical/3.wav</file>
         <file>sound/mechanical/4.wav</file>
-        <file>sound/mechanical/5.wav</file>
+        <file>sound/mechanical/0.wav</file>
+        <file>image/muse.svg</file>
     </qresource>
 </RCC>
